@@ -1,6 +1,14 @@
-$color: red;
-$color2: blue;
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import 'vendor/font-awesome';
 
-.test-class {
-    background-color: $color;
-}
+@import 'settings/global';
+@import 'settings/mixins';
+@import 'settings/variables';
+@import 'settings/reset';
+
+@import 'components/input';
+
+@import 'modules/header';
+@import 'modules/product-list';
+@import 'modules/shopping-cart';

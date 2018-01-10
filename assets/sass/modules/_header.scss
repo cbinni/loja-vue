@@ -1,0 +1,12 @@
+.header{
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	&__logo{
+		img{
+			width: 200px;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+@mixin calc($property, $value) {
+	#{$property}: -webkit-calc(#{$value});
+	#{$property}: calc(#{$value});
+}
+
+@mixin max_screen($size, $var: max-width) {
+    @media screen and (#{$var} : #{$size}) {@content;}
+}
+
+@mixin min_screen($size, $var: min-width) {
+    @media screen and (#{$var} : #{$size+1}) {@content;}
+}
+
+@mixin clearfix {
+	&::after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+
+@mixin columns($total-columns) {
+	$columns : ($grid-columns/ $total-columns);
+	float: left;
+	width: percentage(($columns / $grid-columns));
+}
+
+@mixin width_colums($total-columns) {
+	$columns : ($grid-columns/ $total-columns);
+	width: percentage(($columns / $grid-columns));
+}
+
+@mixin middle-align($position: relative) {
+	position: $position;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+@mixin vertical-align($position: relative) {
+	position: $position;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}

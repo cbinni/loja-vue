@@ -1,0 +1,27 @@
+//** Number of columns in the grid.
+$grid-columns:  12 !default;
+
+$base-color-black		: #000000;
+$base-color-border		: #DDDDDD;
+$base-color-white		: #FFFFFF;
+$base-color-lighgray	: #F5F5F5;
+$base-color-darkgray	: #676767;
+
+$base-color-light-text	: #AAAAAA;
+$base-color-dark-text	: #363636;
+
+$base-color-blue		: #2BC3FF;
+$base-color-blue-dark	: #31475E;
+$base-color-bege		: #BEBAAB;
+$base-color-green		: #37BB83;
+$base-color-green-light	: #C8EBDC;
+
+//Screen sizes
+//===================================================
+$screen-mc: 480px;
+$screen-xs: 540px;
+$screen-sm: 767px;
+$screen-md: 980px;
+$screen-mg: 1050px;
+$screen-lg: 1280px;
+$screen-xg: 1400px;

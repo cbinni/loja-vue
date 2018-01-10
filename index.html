@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Website</title>
+	<head>
+		<title>My Website</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="dist/app.css">
-    </head>
-    <body>
+		<link rel="stylesheet" href="dist/app.css">
 
-    </body>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+			<!-- header -->
+			<header class="header">
+				<div class="header__logo">
+					<a href="/" title="Logo"><img src="/assets/images/logo.png" alt="Logo"/></a>
+				</div>
+				<div class="header__cart">
+				</div>
+			</header>
+			<!-- /header -->
+			<product-list></product-list>
+			<div class="container">
+			</div>
+			<div class="shopping-cart">
+				<div class="shopping-cart__icon">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="/app/components/product.js"></script>
+		<script src="/app/components/product-list.js"></script>
+		<script src="/app/main.js"></script>
+	</body>
 </html>
