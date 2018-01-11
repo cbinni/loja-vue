@@ -8,10 +8,11 @@
 		height: 450px;
 		margin-bottom: 1%;
 		box-shadow: 0 0 10px rgba(0,0,0,0.6);
+		overflow: hidden;
+		border-radius: 6px;
 
 		&__image{
 			height: 200px;
-			background-color: $base-color-green-light;
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -26,6 +27,9 @@
 
 		&__description{
 			padding: 8px 15px;
+			p{
+				height: 80px;
+			}
 		}
 		&__price{
 			font-size: 25px;

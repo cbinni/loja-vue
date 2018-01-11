@@ -13,10 +13,18 @@ Vue.component('shopping-cart', {
 						<cart-list></cart-list>
 					</div>
 					<div class="cart-content__footer">
-						<p>Total: $467.00</p>
+						<p>Total: R$ {{ sumCart }}</p>
 					</div>
 				</div>
 			</div>
 		</div>
-	`
+	`,
+
+	computed: {
+		sumCart(){
+			return this.$root.cartItems.reduce( function( prevVal, item ) {
+				return prevVal + item.price
+			}, 0 );
+		}
+	}
 })

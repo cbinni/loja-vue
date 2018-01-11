@@ -2,14 +2,24 @@ Vue.component('cart-item', {
 	template: `
 		<div class="cart-item">
 			<div class="cart-item__image">
-				<img src="http://baixarimagensgratis.org/wp-content/uploads/2017/12/skull-wallpaper12.jpg">
+				<img :src=" item.image ">
 			</div>
 			<div class="cart-item__content">
-				<span>Handcrafted Soft Towels</span>
-				<span>Quantity: <b>1</b></span>
+				<span>{{ item.name }}</span>
+				<span>Quantity: <b>{{ item.quantity }}</b></span>
 			</div>
-			<div class="cart-item__price">$467.00</div>
-			<div class="cart-item__remove"><i class="fa fa-times"></i></div>
+			<div class="cart-item__price">R$ {{ item.price * item.quantity }}</div>
+			<div class="cart-item__remove" @click="removeCart(item.id)"><i class="fa fa-times"></i></div>
 		</div>
-	`
+	`,
+
+	props: ['item'],
+
+	methods: {
+		removeCart(id) {
+			this.$root.cartItems = this.$root.cartItems.filter(function (item) {
+				return item.id !== id
+			})
+		}
+	}
 })

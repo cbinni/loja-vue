@@ -1,7 +1,17 @@
 .cart-list{
 	height: 100%;
 	overflow: auto;
-
+	&::-webkit-scrollbar{
+		width:10px;
+		background:$base-color-white;  
+	}
+	&::-webkit-scrollbar-track{
+		background:$base-color-white;
+	}
+	&::-webkit-scrollbar-thumb{
+		border-radius:10px;
+		background:$base-color-green-light;  
+	}
 	&__divider{
 		height: 2px;
 		width: 100%;
