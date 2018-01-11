@@ -1,0 +1,10 @@
+.cart-list{
+	height: 100%;
+	overflow: auto;
+
+	&__divider{
+		height: 2px;
+		width: 100%;
+		background-color: rgba(0,0,0,.12);
+	}
+}

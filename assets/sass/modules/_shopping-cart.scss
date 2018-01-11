@@ -1,21 +1,17 @@
 .shopping-cart{
-	display: flex;
-	flex-direction: row-reverse;
-	&__icon{
+	&__icon, &__wrapper{
 		position: fixed;
 		bottom: 20px;
 		right: 2vw;
-		height: 72px;
-		width: 72px;
+	}
+	&__icon{
+		z-index: 10;
+		height: 64px;
+		width: 64px;
 		border-radius: 6px;
 		box-shadow: 0 4px 30px rgba(0,0,0,.27);
-		display: -ms-flexbox;
-		display: flex;
 		cursor: pointer;
-		background: #fff;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
+		background: $base-color-white;
 		user-select: none;
 		display: flex;
 		flex-direction: column;
@@ -30,5 +26,12 @@
 			margin: 0 auto;
 			color: $base-color-green;
 		}
+	}
+	&__wrapper{
+		width: 450px;
+		height: 350px;
+	}
+	&__content{
+		height: 100%;
 	}
 }

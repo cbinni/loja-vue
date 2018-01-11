@@ -1,7 +1,7 @@
 Vue.component('product-list', {
 	template: `
 		<div class="product-list">
-			<product v-for="prod in products"></product>
+			<product v-for="prod in products" :key="prod"></product>
 		</div>
 
 	`,
